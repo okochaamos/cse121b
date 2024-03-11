@@ -26,11 +26,11 @@ nameElement.innerHTML = `<strong>${fullName}</strong>`;
 
 yearElement.innerTextContent = `<strong>${currentYear}</strong>`;
 
-imageElement.setAttribute("src", "images/placeholder");
+imageElement.setAttribute("src", "images/placeholder.jpg");
 
-const favoriteFood = ["rice", "eba", "yam", "plantain poridge", "fish pepper soup","goatmeat pepper soup"];
+const favoriteFood = ["rice",  "eba",  "yam",  "plantain poridge",  "fish pepper soup", "goatmeat pepper soup"];
 console.log(`${favoriteFood}`)
-const myFood = favoriteFood.push("edikan ikong soup");
+const myFood = favoriteFood.push("edikan ikong soup", "oto");
 console.log(`${myFood}`)
 
 const latestFood = favoriteFood.pop();
