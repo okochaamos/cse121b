@@ -14,11 +14,11 @@ console.log(`Current year : ${currentYear}`);
 let profilePicture = "images/placeholder.jpg";
 console.log(`${profilePicture}`);
 
-const nameElement = document.getElementById("name");
+var nameElement = document.getElementById("name");
 
-const foodElement = document.getElementById("food");
+var foodElement = document.getElementById("food");
 
-const yearElement = document.querySelector("#year");
+var yearElement = document.querySelector("#year");
 
 let imageElement = document.getElementById("home");
 
@@ -29,19 +29,21 @@ yearElement.innerTextContent = `<strong>${currentYear}</strong>`;
 imageElement.setAttribute("src", "images/placeholder.jpg");
 
 const favoriteFood = ["rice",  "eba",  "yam",  "plantain poridge",  "fish pepper soup", "goatmeat pepper soup"];
-console.log(`${favoriteFood}`)
+console.log(`${favoriteFood}`);
 const myFood = favoriteFood.push("edikan ikong soup", "oto");
-console.log(`${myFood}`)
+console.log(`${myFood}`);
 
 const latestFood = favoriteFood.pop();
-console.log(`${latestFood}`)
+console.log(`${latestFood}`);
 
 const myLatestFood = favoriteFood.shift();
-console.log(`${myLatestFood}`)
+console.log(`${myLatestFood}`);
 
 foodElement += `<br> ${favoriteFood}`;
 
 foodElement += `<br>${favoriteFood}`;
+
+foodElement.innerHTML = `<strong> ${favoriteFood}</strong>`
 
 
 
