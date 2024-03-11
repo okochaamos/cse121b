@@ -26,7 +26,7 @@ nameElement.innerHTML = `<strong>${fullName}</strong>`;
 
 yearElement.innerTextContent = `<strong>${currentYear}</strong>`;
 
-imageElement.setAttribute("src", "images/" + placeholder + "jpg");
+imageElement.setAttribute("src", "images/placeholder");
 
 const favoriteFood = ["rice", "eba", "yam", "plantain poridge", "fish pepper soup","goatmeat pepper soup"];
 console.log(`${favoriteFood}`)
