@@ -14,7 +14,7 @@ console.log(`Current year : ${currentYear}`);
 let profilePicture = "images/placeholder.jpg";
 console.log(`${profilePicture}`);
 
-const favoriteFood = ["rice",  "eba",  "yam",  "plantain poridge",  "fish pepper soup", "goatmeat pepper soup"];
+const favoriteFood = ["rice",  "eba",  "plantain poridge",  "fish pepper soup", ];
 console.log(`Favorite Food : ${favoriteFood}`)
 
 
@@ -51,7 +51,8 @@ imageElement.setAttribute("src", "images/placeholder.jpg", alt = "Profile Pictur
 
 /* Step 4 - Adding Content */
 
-
+const mawize = favoriteFood.push("Ofe Nsala", "chicken & Chips");
+console.log(`Favorite = ${mawize} `)
 
 
 
