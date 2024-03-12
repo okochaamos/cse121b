@@ -14,54 +14,44 @@ console.log(`Current year : ${currentYear}`);
 let profilePicture = "images/placeholder.jpg";
 console.log(`${profilePicture}`);
 
+const favoriteFood = ["rice",  "eba",  "yam",  "plantain poridge",  "fish pepper soup", "goatmeat pepper soup"];
+console.log(`Favorite Food : ${favoriteFood}`)
+
+
+
+/* Step 3 - Element Variables */
+
 const nameElement = document.getElementById("name");
+console.log(`name: ${nameElement}`);
 
 const foodElement = document.getElementById("food");
+console.log(`foods : ${foodElement}`)
 
 const yearElement = document.querySelector("#year");
+console.log(`year : ${yearElement}`)
 
 let imageElement = document.getElementById("home");
+console.log(`home : ${imageElement}`)
 
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 
 yearElement.innerTextContent = `<strong>${currentYear}</strong>`;
 
-imageElement.setAttribute("src", "images/placeholder.jpg");
-
-const favoriteFood = ["rice",  "eba",  "yam",  "plantain poridge",  "fish pepper soup", "goatmeat pepper soup"];
-
-console.log(`${favoriteFood}`);
-
-const myFood = favoriteFood.push("edikan ikong soup", "oto");
-foodElement += `<br> ${myFood}`;
-console.log(`${favoriteFood}`);
-
-const latestFood = favoriteFood.pop();
-
-console.log(`${favoriteFood}`);
-
-const myLatestFood = favoriteFood.shift();
-
-console.log(`${myLatestFood}`);
-
-foodElement.innerTextContent = `<strong> ${favoriteFood}</strong>`;
+foodElement.innerHTML = `<strong>${favoriteFood}<strong>`
 
 
 
+imageElement.setAttribute("src", "images/placeholder.jpg", alt = "Profile Picture");
 
 
-
-
-
-
-
-/* Step 3 - Element Variables */
 
 
 
 
 
 /* Step 4 - Adding Content */
+
+
 
 
 
