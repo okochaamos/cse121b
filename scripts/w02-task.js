@@ -28,9 +28,9 @@ yearElement.innerTextContent = `<strong>${currentYear}</strong>`;
 
 imageElement.setAttribute("src", "images/placeholder.jpg");
 
-const favoriteFood = ["rice",  "eba",  "yam",  "plantain poridge",  "fish pepper soup", "goatmeat pepper soup"];
+const favoriteFood = [];
 console.log(`${favoriteFood}`);
-const myFood = favoriteFood.push("edikan ikong soup", "oto");
+const myFood = favoriteFood.push("rice",  "eba",  "yam",  "plantain poridge",  "fish pepper soup", "goatmeat pepper soup","edikan ikong soup", "oto");
 console.log(`${myFood}`);
 
 const latestFood = favoriteFood.pop();
@@ -39,9 +39,11 @@ console.log(`${latestFood}`);
 const myLatestFood = favoriteFood.shift();
 console.log(`${myLatestFood}`);
 
-foodElement += `<br> ${favoriteFood}`;
+foodElement += `<br> ${myFood}`;
 
-foodElement += `<br>${favoriteFood}`;
+foodElement += `<br>${latestFood}`;
+
+foodElement += `<br>${myLatestFood}`
 
 foodElement.innerHTML = `<strong> ${favoriteFood}</strong>`
 
