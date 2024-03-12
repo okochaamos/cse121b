@@ -14,11 +14,11 @@ console.log(`Current year : ${currentYear}`);
 let profilePicture = "images/placeholder.jpg";
 console.log(`${profilePicture}`);
 
-var nameElement = document.getElementById("name");
+const nameElement = document.getElementById("name");
 
-var foodElement = document.getElementById("food");
+const foodElement = document.getElementById("food");
 
-var yearElement = document.querySelector("#year");
+const yearElement = document.querySelector("#year");
 
 let imageElement = document.getElementById("home");
 
