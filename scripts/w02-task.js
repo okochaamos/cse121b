@@ -51,19 +51,16 @@ imageElement.setAttribute("src", "images/placeholder.jpg", alt = "Profile Pictur
 
 
 const mawize = favoriteFood.push("Ofe Nsala", "Chicken & Chips");
-
 foodElement.innerHTML += `<br>${favoriteFood}`;
-console.log(favoriteFood);
+
 
 const flesh = favoriteFood.pop();
-
 foodElement.innerHTML += `<br>${favoriteFood}`;
-console.log(favoriteFood);
+
 
 const abu = favoriteFood.shift();
-
 foodElement.innerHTML += `<br>${favoriteFood}`;
-console.log(favoriteFood);
+
 
 
 
