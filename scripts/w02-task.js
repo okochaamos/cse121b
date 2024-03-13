@@ -14,22 +14,8 @@ console.log(`Current year : ${currentYear}`);
 let profilePicture = "images/placeholder.jpg";
 console.log(`${profilePicture}`);
 
-const favoriteFood = ["Rice",  "Eba",  "Plantain Poridge",  "fish Pepper Soup", ];
+const favoriteFood = ["Rice",  "Eba",  "Plantain Poridge",  "fish Pepper Soup" ];
 console.log(`Favorite Food : ${favoriteFood}`);
-
-const mawize = favoriteFood.push("Ofe Nsala", "Chicken & Chips");
-console.log(mawize);
-console.log(favoriteFood);
-
-const flesh = favoriteFood.pop();
-console.log(flesh);
-console.log(favoriteFood)
-
-const abu = favoriteFood.shift();
-console.log(abu);
-console.log(favoriteFood)
-
-
 
 
 /* Step 3 - Element Variables */
@@ -60,11 +46,24 @@ imageElement.setAttribute("src", "images/placeholder.jpg", alt = "Profile Pictur
 
 
 
-
-
-
-
 /* Step 4 - Adding Content */
+
+
+
+const mawize = favoriteFood.push("Ofe Nsala", "Chicken & Chips");
+console.log(mawize);
+foodElement.innerHTML += `<br>${favoriteFood}`;
+console.log(favoriteFood);
+
+const flesh = favoriteFood.pop();
+console.log(flesh);
+foodElement.innerHTML += `<br>${favoriteFood}`;
+console.log(favoriteFood);
+
+const abu = favoriteFood.shift();
+console.log(abu);
+foodElement.innerHTML += `<br>${favoriteFood}`;
+console.log(favoriteFood);
 
 
 
