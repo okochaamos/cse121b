@@ -1,23 +1,31 @@
 /* LESSON 3 - Programming Tasks */
 
 
-let numbers1 = Number(document.querySelector("#add1").value);
-let numbers2 = Number(document.querySelector("#add2").value);
-/* FUNCTIONS */
-/* Function Definition - Add Numbers */
-
+const numbers1 = Number(document.querySelector("#add1").value);
+const numbers2 = Number(document.querySelector("#add2").value);
 
 function add(numbers1, numbers2) {
     return numbers1 + numbers2;
 }
 
-function addNumbers(numbers1, numbers2){
-    document.querySelector("#sum")= add(numbers1, numbers2);
 
-}
+/* FUNCTIONS */
+/* Function Definition - Add Numbers */
+
+
+
+
+function addNumbers(numbers1, numbers2){
+    
+    document.querySelector("#sum ") = add(numbers1,numbers2);
+    
+ }
+
+ operation = document.querySelector("#addNumbers").addEventListener(click, addNumbers);
+
     
 
-let button = document.querySelector("#addNumbers").addEventListener(click, addNumbers);
+
 
 
 /* Function Expression - Subtract Numbers */
